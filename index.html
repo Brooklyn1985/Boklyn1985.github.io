@@ -1,233 +1,682 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Ouerfelli Mohammed Amine</title>
-  <style>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- SEO Meta Tags -->
+        <meta name="description" content="Your description">
+        <meta name="author" content="Your name">
 
-header {
-  background-image:url('/20221204_200632.jpg');
-  background-size: cover;
-  background-position: center;
-}
+        <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+        <meta property="og:site_name" content="" /> <!-- website name -->
+        <meta property="og:site" content="" /> <!-- website link -->
+        <meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+        <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+        <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+        <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+        <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
-  nav {
-    display: none;
-  }
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  nav li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  nav a {
-    color: white;
-    text-decoration: none;
-  }
-</style>
- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+        <!-- Webpage Title -->
+        <title>Webpage Title</title>
+        
+        <!-- Styles -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/fontawesome-all.css" rel="stylesheet">
+        <link href="css/swiper.css" rel="stylesheet">
+        <link href="css/magnific-popup.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        
+        <!-- Favicon  -->
+        <link rel="icon" href="images/favicon.png">
+    </head>
+    <body data-spy="scroll" data-target=".fixed-top">
+        
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+            <div class="container">
+                
+                <!-- Text Logo - Use this if you don't have a graphic logo -->
+                <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Name</a> -->
 
-</head>
-<body>
-<style>
-body {
-  background-image: url('/202211_133516.jpg');
-  background-size: cover;
-  background-position: center;
-}
-</style>
-<style>
-body {
-  background-color: gray;
-}
-</style>
-  <header>
-  <style>
-    header {
-  color: white;
-  font-family: Arial, sans-serif;
-  font-size: 36px;
-  font-weight: bold;
-  text-align: center;
-}
-</style>
-    <h1>Welcome to My Personal Website</h1>
-    <button onclick="toggleMenu()">Menu</button>
-  </header>
-  <nav id="MENU">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>As a first year engineering student, I am excited to begin my journey in the world of data science and data analytics.
-         With a strong passion for problem-solving and an interest in utilizing data to drive decision-making, I am eager to learn and grow in this field.
-         I am highly motivated and constantly seeking out opportunities to gain hands-on experience and further my understanding of data-driven technologies.
-         I am confident that my analytical skills, combined with my curiosity and drive, will allow me to excel in a career in data science and analytics.</p>
-    </section>
-<hr style="border: 1px solid black; width: 90%;">
+                <!-- Image Logo -->
+                <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> 
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>Skill 1</li>
-        <li>Skill 2</li>
-        <li>Skill 3</li>
-      </ul>
-    </section>
-<hr style="border: 1px solid black; width: 90%;">
+                <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li>
-          <a href="/Project1.html">Project 1</a>
-          <p>A brief description of project 1 goes here</p>
-        </li>
-        <li>
-          <a href="/Project1.html">Project 2</a>
-          <p>A brief description of project 2 goes here</p>
-        </li>
-        <li>
-          <a href="/Project1.html">Project 3</a>
-          <p>A brief description of project 3 goes here</p>
-        </li>
-        </ul>
-    </section>
-<hr style="border: 1px solid black; width: 90%;">
-
-    
-    <style>
-
-  /* Style the globe */
-
-  #globe {
-
-    position: fixed;
-
-    bottom: 20px;
-
-    right: 20px;
-
-    width: 80px;
-
-    height: 80px;
-
-    background-color: #333;
-
-    border-radius: 50%;
-
-  }
-
-  #globe:hover {
-
-    cursor: pointer;
-
-    transform: rotate(360deg);
-
-  }
-
-</style>
-
-<div id="globe"></div>
-
-<script>
-
-  // Add a click event listener to the globe
-
-  var globe = document.getElementById("globe");
-
-  globe.addEventListener("click", function() {
-
-    // Open a new window with the desired URL
-
-    window.open("http://www.linkedin.com/in/mohamed-amin-ouerfeli/", "_blank");
-
-  });
-
-</script>
-    
-    
-    <script>
-
-  function toggleMenu() {
-
-    var menu = document.getElementById("MENU");
-
-    if (menu.style.display === "block") {
-
-      menu.style.display = "none";
-
-    } else {
-
-      menu.style.display = "block";
-
-    }
-
-  }
-
-</script>
-    <section id="social media links">
-    <h2>Social Media Profiles</h2>
-    <style>
-  /* Style the social media links */
-  .social-media-links {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  .social-media-links li {
-    margin-right: 20px;
-  }
-  .social-media-links a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background-color: #333;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    color: white;
-  }
-  .social-media-links a:hover {
-    background-color: #1da1f2;
-  }
-</style>
-</section>
-
-<ul class="social-media-links">
-  <li><a href="https://twitter.com/WerfeliAmin?t=6uXUo8Cjl966qU9fMDLCGQ&s=09"><i class="fab fa-twitter"></i></a></li>
-  <li><a href="https://www.facebook.com/profile.php?id=100073200158785&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a></li>
-  <li><a href="https://github.com/Brooklyn1985"><i class="fab fa-github"></i></a></li>
-  <li><a href="https://www.linkedin.com/in/mohamed-amin-ouerfeli/"><i class="fab fa-linkedin-in"></i></a></li>
-  <li><a href="https://open.spotify.com/user/87o0v221wxm6osx97l0f2ur1r?si=TNptjTUQQhek6LDopy5Lsw"><i class="fab fa-spotify"></i></a></li>
-</ul>
-
-<hr style="border: 1px solid black; width: 90%;">
+                <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#details">Details</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown01">
+                                <a class="dropdown-item page-scroll" href="article.html">Article Details</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item page-scroll" href="terms.html">Terms Conditions</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item page-scroll" href="privacy.html">Privacy Policy</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <span class="nav-item social-icons">
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </span>
+                </div> <!-- end of navbar-collapse -->
+            </div> <!-- end of container -->
+        </nav> <!-- end of navbar -->
+        <!-- end of navigation -->
 
 
-    
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>You can reach me at:</p>
-      <ul>
-        <li>Email: mohamedamine.ouerfelli@enicar.ucar.tn</li>
-        <li>Phone: 00 216 94 63 63 39</li>
-      </ul>
-    </section>
-    
-  </main>
-  <footer>
-    <p>Copyright 2023 OUERFELLI MOHAMED AMIN</p>
-  </footer>
-</body>
+        <!-- Header -->
+        <header id="header" class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-xl-7">
+                        <h1 class="h1-large">Lorem ipsum dole siter amet consectev</h1>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="expertise">
+                            <div class="title-wrapper">
+                                <div class="icon">
+                                    <img src="images/header-expertise-icon-1.svg" alt="alternative">
+                                </div> <!-- end of icon -->
+                                <h5>TEMPORAL <br>INCIDERE</h5>
+                            </div> <!-- end of title wrapper -->
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                        </div> <!-- end of expertise -->
+
+                        <div class="expertise">
+                            <div class="title-wrapper">
+                                <div class="icon">
+                                    <img src="images/header-expertise-icon-2.svg" alt="alternative">
+                                </div> <!-- end of icon -->
+                                <h5>MAGNAR<br>ALIQUA</h5>
+                            </div> <!-- end of title wrapper -->
+                            <p>Consequat semper viverra nam libero justo. Cursus vitae congue mauris rhoncus</p>
+                        </div> <!-- end of expertise -->
+                        
+                        <div class="expertise">
+                            <div class="title-wrapper">
+                                <div class="icon">
+                                    <img src="images/header-expertise-icon-3.svg" alt="alternative">
+                                </div> <!-- end of icon -->
+                                <h5>PULVINA<br>MATTISO</h5>
+                            </div> <!-- end of title wrapper -->
+                            <p>Est velit egestas dui id. In eu mi bibendum neque egestas congue etiam dignissim</p>
+                        </div> <!-- end of expertise -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </header> <!-- end of header -->
+        <!-- end of header -->
+
+
+        <!-- About -->
+        <div id="about" class="basic-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title">ABOUT</div>
+                        <h2 class="h2-heading">Lobortis sceler fermentum dui</h2>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="text-container first">
+                            <img class="img-fluid" src="images/about.jpg" alt="alternative">
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-4">
+                        <div class="text-container second">
+                            <h4>Pulviar mattis nuncs</h4>
+                            <p>Sed turpis tincidunt id aliquet risus feugiat in ante metus. Leo urna molestie at elementum eu facilisis. Nunc eget lorem dolor sed viverra ipsum. Adipiscing elit duis tristique sollicitudin nibh sit</p>
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">2020 - Urpis tinnt id aliquet risus</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">2021 - Feugiat in ante metus leora</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Present - Nunc eget lorem dolor sed</div>
+                                </li>
+                            </ul>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-4">
+                        <div class="text-container third">
+                            <div class="testimonial-text">“Viverra ipsum adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Tristique senectus et netus et malesuada fames rhoncus”</div>
+                            <hr>
+                            <div class="testimonial-author">Lorem Ipsum</div>
+                            <div class="p-small">General Manager</div>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of basic-1 -->
+        <!-- end of about -->
+        
+        
+        <!-- Services -->
+        <div id="services" class="basic-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title">SERVICES</div>
+                        <h2 class="h2-heading">Urna neque viverra justo nec ultri dui sapien ege sit amet di pare</h2>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        
+                        <!-- Service -->
+                        <div class="service-container">
+                            <div class="service-wrapper">
+                                <img src="images/service-icon-1.svg" alt="alternative">
+                                <div class="service-details">
+                                    <h5>Lorem Ipsum</h5>
+                                    <p>Labore et dolore magna aliqua consequat semper viverra nam libero justo cursus viterbo</p>
+                                </div> <!-- end of service-details -->
+                            </div> <!-- end of service-wrapper -->
+                        </div> <!-- end of service-container -->
+                        <!-- end of service -->
+
+                        <!-- Service -->
+                        <div class="service-container">
+                            <div class="service-wrapper">
+                                <img src="images/service-icon-2.svg" alt="alternative">
+                                <div class="service-details">
+                                    <h5>Dolor Sitamet</h5>
+                                    <p>Mauris rhoncus aenean est velit egestas dui id in eu mi bibendum neque egestas congue les</p>
+                                </div> <!-- end of service-details -->
+                            </div> <!-- end of service-wrapper -->
+                        </div> <!-- end of service-container -->
+                        <!-- end of service -->
+
+                        <!-- Service -->
+                        <div class="service-container">
+                            <div class="service-wrapper">
+                                <img src="images/service-icon-3.svg" alt="alternative">
+                                <div class="service-details">
+                                    <h5>Consect Uradipe</h5>
+                                    <p>Etiam dignissim diam quis enim lobortis scelerisque fermentum dui viverra nibh cras bitu</p>
+                                </div> <!-- end of service-details -->
+                            </div> <!-- end of service-wrapper -->
+                        </div> <!-- end of service-container -->
+                        <!-- end of service -->
+
+                        <!-- Service -->
+                        <div class="service-container">
+                            <div class="service-wrapper">
+                                <img src="images/service-icon-4.svg" alt="alternative">
+                                <div class="service-details">
+                                    <h5>Cingeli Tsedo</h5>
+                                    <p>Sed turpis tincidunt id aliquet risus feugiat in ante metus leo urna molestie at elem dero</p>
+                                </div> <!-- end of service-details -->
+                            </div> <!-- end of service-wrapper -->
+                        </div> <!-- end of service-container -->
+                        <!-- end of service -->
+
+                        <!-- Service -->
+                        <div class="service-container">
+                            <div class="service-wrapper">
+                                <img src="images/service-icon-5.svg" alt="alternative">
+                                <div class="service-details">
+                                    <h5>Eiusmod Tempor</h5>
+                                    <p>Adipiscing elit duis tristique sollicitudin nibh sit amet comdo nulla tristique sene depro asla</p>
+                                </div> <!-- end of service-details -->
+                            </div> <!-- end of service-wrapper -->
+                        </div> <!-- end of service-container -->
+                        <!-- end of service -->
+
+                        <!-- Service -->
+                        <div class="service-container">
+                            <div class="service-wrapper">
+                                <img src="images/service-icon-6.svg" alt="alternative">
+                                <div class="service-details">
+                                    <h5>Incidi Duntut</h5>
+                                    <p>Rhoncus urna neque viverra justo nec ultrices dui sapien eget sit amet tellus cras fer tilo rim</p>
+                                </div> <!-- end of service-details -->
+                            </div> <!-- end of service-wrapper -->
+                        </div> <!-- end of service-container -->
+                        <!-- end of service -->
+
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="p-large">Adipiscing enim eu turpis egestas pretium suscipit tellus mauris a diam mae. <a class="blue no-line" href="#contact"><strong>Contact us</strong></a> nulla pharetra diam</p>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+            <svg class="services-decoration" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 2349.939 110.567"><defs><style>.cls-1{fill:#3f424b;}</style></defs><title>services-decoration</title><path class="cls-1" d="M0,0C282.74,67.647,704.207,110.567,1174.97,110.567S2067.2,67.647,2349.939,0H0Z"/></svg>
+        </div> <!-- end of basic-2 -->
+        <!-- end of services -->
+
+
+        <!-- Details 1 -->
+        <div id="details" class="basic-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="image-container">
+                            <img class="img-fluid" src="images/details-1.jpg" alt="alternative">
+                        </div> <!-- end of image-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-5">
+                        <div class="text-container">
+                            <h2>Blandit turpis cursus in</h2>
+                            <p>Viverra tellus in hac habitasse. Pellentesque habitant morbi tristique senectus. Magna sit amet purus gravida quis bldit. Enim praesent elem facilisis leo vel. Praesent elementum facilisis leo vel fringilla est ullamcorper vita dura est</p>
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Aliquet sagittis id consectetur purus vestibulum mattis</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Ed ullamcorper morbi tincidunt ornare. Enim tellu</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Agittis vitae et leo. Ac ut consequat semper</div>
+                                </li>
+                            </ul>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of basic-3 -->
+        <!-- end of details 1 -->
+
+
+        <!-- Details 2 -->
+        <div class="basic-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="text-container">
+                            <h2>Lorem donec mas sap</h2>
+                            <p>Justo laoreet duis at consectetur lorem donec massa sapien. Vestibulum rhoncus est pellentesque elit ullam corper dignissim cras tincidunt lobortis euismod quis</p>
+                            <p>Mauris commodo quis imperdiet massa tincidunt nunc. Pharetra diam sit amet nisl suscipit adipiscing bib</p>
+                            <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox">Lightbox</a>
+                            <a class="btn-outline-reg page-scroll" href="#contact">Contact Us</a>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-7">
+                        <div class="image-container">
+                            <img class="img-fluid" src="images/details-2.jpg" alt="alternative">
+                        </div> <!-- end of image-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of basic-4 -->
+        <!-- end of details 2 -->
+
+
+        <!-- Details Lightbox -->
+        <!-- Lightbox -->
+        <div id="details-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
+            <div class="row">
+                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+                <div class="col-lg-8">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/details-lightbox.jpg" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <h3>Vestibum rhoncus</h3>
+                    <hr>
+                    <p>Enim ut tellus elementum sagittis vitae et leo. Ac ut consequat semper viverra nam libero justo laoreet.</p>
+                    <h4>Lorem Ipsum</h4>
+                    <p>Mauris commodo quis imperdiet massa tincidunt nunc. Pharetra diam sit amet nisl suscipit adipiscing bibendum est ultricies.</p>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fas fa-chevron-right"></i><div class="media-body">Hac habitasse platea</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-chevron-right"></i><div class="media-body">Dictumst quisque sagiti</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-chevron-right"></i><div class="media-body">Sed blandit libero voluat</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-chevron-right"></i><div class="media-body">Fringilla urna porttitor</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-chevron-right"></i><div class="media-body">Rhoncus dolor purus non</div>
+                        </li>
+                    </ul>
+                    <a class="btn-solid-reg mfp-close page-scroll" href="#contact">Contact Us</a> <button class="btn-outline-reg mfp-close as-button" type="button">Back</button>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of lightbox-basic -->
+        <!-- end of lightbox -->
+        <!-- end of details lightbox -->
+
+
+        <!-- Details 3 -->
+        <div class="basic-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="image-container">
+                            <img class="img-fluid" src="images/details-3.jpg" alt="alternative">
+                        </div> <!-- end of image-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-5">
+                        <div class="text-container">
+                            <h2>Dignssim convallis aenea</h2>
+                            <p>Risus pretium quam vulputate dignissim suspendisse in est ante in. Lorem dolor sed viverra ipsum nunc aliquet bibum. Venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus lorem ipsum</p>
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Venenatis a condimentum vitae sapien pellenteue rem</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Rhoncus urna neque viverra justo nec turpis tinci</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Eu feugiat pretium nibh ipsum consequat nisl</div>
+                                </li>
+                            </ul>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of basic-5 -->
+        <!-- end of details 3 -->
+
+
+        <!-- Statistics -->
+        <div class="counter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        
+                        <!-- Counter -->
+                        <div id="counter">
+                            <div class="cell">
+                                <div class="counter-value number-count" data-count="231">1</div>
+                                <p class="counter-info">Habitn Morbi</p>
+                            </div>
+                            <div class="cell">
+                                <div class="counter-value number-count" data-count="385">1</div>
+                                <p class="counter-info">Uncre Conseu</p>
+                            </div>
+                            <div class="cell">
+                                <div class="counter-value number-count" data-count="159">1</div>
+                                <p class="counter-info">Odiope Lentes</p>
+                            </div>
+                            <div class="cell">
+                                <div class="counter-value number-count" data-count="127">1</div>
+                                <p class="counter-info">Portior Rhons</p>
+                            </div>
+                            <div class="cell">
+                                <div class="counter-value number-count" data-count="211">1</div>
+                                <p class="counter-info">Dolor Puruse</p>
+                            </div>
+                        </div>
+                        <!-- end of counter -->
+
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of counter -->
+        <!-- end of statistics -->
+
+
+        <!-- Testimonials -->
+        <div class="slider-1 bg-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title">TESTIMONIALS</div>
+                        <h2 class="h2-heading">Portitor rhoncus dolor pur</h2>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <!-- Card Slider -->
+                        <div class="slider-container">
+                            <div class="swiper-container card-slider">
+                                <div class="swiper-wrapper">
+                                    
+                                    <!-- Slide -->
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <img class="card-image" src="images/testimonial-1.jpg" alt="alternative">
+                                            <div class="card-body">
+                                                <p class="testimonial-text">Sem integer vitae justo eget magna fermentum iaculis eu quis vel eros donec ac odio tempor orci elit pellent</p>
+                                                <p class="testimonial-author">Lorem Ipsum - Developer</p>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end of swiper-slide -->
+                                    <!-- end of slide -->
+            
+                                    <!-- Slide -->
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <img class="card-image" src="images/testimonial-2.jpg" alt="alternative">
+                                            <div class="card-body">
+                                                <p class="testimonial-text">Sem integer vitae justo eget magna fermentum iaculis eu quis vel eros donec ac odio tempor orci elit pellent</p>
+                                                <p class="testimonial-author">Lorem Ipsum - Developer</p>
+                                            </div>
+                                        </div>        
+                                    </div> <!-- end of swiper-slide -->
+                                    <!-- end of slide -->
+            
+                                    <!-- Slide -->
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <img class="card-image" src="images/testimonial-3.jpg" alt="alternative">
+                                            <div class="card-body">
+                                                <p class="testimonial-text">Sem integer vitae justo eget magna fermentum iaculis eu quis vel eros donec ac odio tempor orci elit pellent</p>
+                                                <p class="testimonial-author">Lorem Ipsum - Developer</p>
+                                            </div>
+                                        </div>        
+                                    </div> <!-- end of swiper-slide -->
+                                    <!-- end of slide -->
+            
+                                    <!-- Slide -->
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <img class="card-image" src="images/testimonial-4.jpg" alt="alternative">
+                                            <div class="card-body">
+                                                <p class="testimonial-text">Sem integer vitae justo eget magna fermentum iaculis eu quis vel eros donec ac odio tempor orci elit pellent</p>
+                                                <p class="testimonial-author">Lorem Ipsum - Developer</p>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end of swiper-slide -->
+                                    <!-- end of slide -->
+            
+                                    <!-- Slide -->
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <img class="card-image" src="images/testimonial-5.jpg" alt="alternative">
+                                            <div class="card-body">
+                                                <p class="testimonial-text">Sem integer vitae justo eget magna fermentum iaculis eu quis vel eros donec ac odio tempor orci elit pellent</p>
+                                                <p class="testimonial-author">Lorem Ipsum - Developer</p>
+                                            </div>
+                                        </div>        
+                                    </div> <!-- end of swiper-slide -->
+                                    <!-- end of slide -->
+            
+                                    <!-- Slide -->
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <img class="card-image" src="images/testimonial-6.jpg" alt="alternative">
+                                            <div class="card-body">
+                                                <p class="testimonial-text">Sem integer vitae justo eget magna fermentum iaculis eu quis vel eros donec ac odio tempor orci elit pellent</p>
+                                                <p class="testimonial-author">Lorem Ipsum - Developer</p>
+                                            </div>
+                                        </div>        
+                                    </div> <!-- end of swiper-slide -->
+                                    <!-- end of slide -->
+                                
+                                </div> <!-- end of swiper-wrapper -->
+            
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <!-- end of add arrows -->
+            
+                            </div> <!-- end of swiper-container -->
+                        </div> <!-- end of slider-container -->
+                        <!-- end of card slider -->
+
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of slider-1 -->
+        <!-- end of testimonials -->
+
+
+        <!-- Contact -->
+        <div id="contact" class="form-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="h2-heading">Vitae torto cond</h2>
+                        <p class="p-heading">Porttitor rhoncus dolor purus non enim praesent elementum. Sem integer vitae justo eget magna fermentum iaculis eu. Quis vel mucho dere eros donec ac odio tem <a class="blue no-line" href="#your-link"><strong>contact@name.com</strong></a></p>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        
+                        <!-- Contact Form -->
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" class="form-control-input" id="cname" required>
+                                <label class="label-control" for="cname">Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control-input" id="cemail" required>
+                                <label class="label-control" for="cemail">Email</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                                <label class="label-control" for="cmessage">Project details</label>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="form-control-submit-button">Submit</button>
+                            </div>
+                        </form>
+                        <!-- end of contact form -->
+
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of form-1 -->  
+        <!-- end of contact -->
+
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-col first">
+                            <h6>Lorem Ipsum</h6>
+                            <p class="p-small">Arcu felis bibendum ut tristique et egestas quis ipsum. Ipsum dolor sit amet consectetur. At risus viverra adipiscing at in tellus rempre vito</p>
+                        </div> <!-- end of footer-col -->
+                        <div class="footer-col second">
+                            <h6>Links</h6>
+                            <ul class="list-unstyled li-space-lg p-small">
+                                <li>Important: <a href="terms.html">Terms & Conditions</a>, <a href="privacy.html">Privacy Policy</a></li>
+                                <li>Useful: <a href="#">Colorpicker</a>, <a href="#">Icon Library</a>, <a href="#">Illustrations</a></li>
+                                <li>Menu: <a class="page-scroll" href="#header">Home</a>, <a class="page-scroll" href="#about">About</a>, <a class="page-scroll" href="#services">Services</a>, <a class="page-scroll" href="#contact">Contact</a></li>
+                            </ul>
+                        </div> <!-- end of footer-col -->
+                        <div class="footer-col third">
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-pinterest-p fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-instagram fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <p class="p-small">Sit amet nulla facilisi morbie <a href="mailto:contact@name.com"><strong>contact@name.com</strong></a></p>
+                        </div> <!-- end of footer-col -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of footer -->  
+        <!-- end of footer -->
+
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="p-small">Copyright © Some name</p>
+                    </div> <!-- end of col -->
+                </div> <!-- enf of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of copyright --> 
+        <!-- end of copyright -->
+        
+            
+        <!-- Scripts -->
+        <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+        <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+        <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+        <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+        <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+        <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    </body>
 </html>
-
